@@ -29,4 +29,5 @@ export const updatePost = (id: string, title: string, desc: string) => {
     post.title = title;
     post.desc = desc;
   }
+  throw new Error("Post not found");
 };
